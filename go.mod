@@ -9,5 +9,5 @@ require (
 )
 
 replace (
-	github.com/contiv/libOpenflow => github.com/yktsubo/libOpenflow v0.0.4
+	github.com/contiv/libOpenflow => github.com/yktsubo/libOpenflow v0.0.5
 )
