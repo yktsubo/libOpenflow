@@ -10,4 +10,4 @@ require (
 
 replace (
 	github.com/contiv/libOpenflow => github.com/yktsubo/libOpenflow v0.0.3
-}
+)
