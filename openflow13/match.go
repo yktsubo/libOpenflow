@@ -290,7 +290,7 @@ func DecodeMatchField(class uint16, field uint8, data []byte) (util.Message, err
 		case OXM_FIELD_TCP_FLAGS:
 			val = new(TcpFlagsField)
 		case OXM_FIELD_ACTSET_OUTPUT:
-			val = new(ActionSetField)
+			val = new(ActsetOutputField)
 		default:
 			log.Printf("Unhandled Field: %d in Class: %d", field, class)
 		}
@@ -403,7 +403,7 @@ func DecodeMatchField(class uint16, field uint8, data []byte) (util.Message, err
 		case OXM_FIELD_TCP_FLAGS:
 			val = new(TcpFlagsField)
 		case OXM_FIELD_ACTSET_OUTPUT:
-			val = new(ActionSetField)
+			val = new(ActsetOutputField)
 		}
 		err := val.UnmarshalBinary(data)
 		if err != nil {
