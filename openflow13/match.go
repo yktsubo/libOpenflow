@@ -289,6 +289,8 @@ func DecodeMatchField(class uint16, field uint8, data []byte) (util.Message, err
 		case OXM_FIELD_IPV6_EXTHDR:
 		case OXM_FIELD_TCP_FLAGS:
 			val = new(TcpFlagsField)
+		case OXM_FIELD_ACTSET_OUTPUT:
+			val = new(ActionSetField)
 		default:
 			log.Printf("Unhandled Field: %d in Class: %d", field, class)
 		}
@@ -400,6 +402,8 @@ func DecodeMatchField(class uint16, field uint8, data []byte) (util.Message, err
 		switch field {
 		case OXM_FIELD_TCP_FLAGS:
 			val = new(TcpFlagsField)
+		case OXM_FIELD_ACTSET_OUTPUT:
+			val = new(ActionSetField)
 		}
 		err := val.UnmarshalBinary(data)
 		if err != nil {
@@ -1496,8 +1500,7 @@ func (m *ActsetOutputField) Len() uint16 {
 	return 4
 }
 func (m *ActsetOutputField) MarshalBinary() (data []byte, err error) {
-	data = make([]byte, 4)
-
+	data = make([]byte, m.Len())
 	binary.BigEndian.PutUint32(data, m.OutputPort)
 	return
 }
@@ -1520,3 +1523,5 @@ func NewActsetOutputField(actsetOutputPort uint32) *MatchField {
 
 	return f
 }
+
+
