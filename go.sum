@@ -19,6 +19,8 @@ github.com/yktsubo/libOpenflow v0.0.9 h1:2UIAE7WyD63ctKrT1FnMBnogOHfv/BhdWaAXHrw
 github.com/yktsubo/libOpenflow v0.0.9/go.mod h1:0DtaJQdKdGIl2aEUGKOyZPrbzu64LcssbOMMEhRsOW8=
 github.com/yktsubo/libOpenflow v0.1.0 h1:epCpJHK0M2ncmd6pZohoZ4DGyH03DBND+lAbTTNIhRs=
 github.com/yktsubo/libOpenflow v0.1.0/go.mod h1:3tVBpzu6UUtOPf4aa8y9VgQyqThHpNNlVM1dHLlEm84=
+github.com/yktsubo/libOpenflow v0.1.1 h1:fRGsoFtHx0lQicPPxSRt7YAvtGi6BoK6D27lAB/9cO8=
+github.com/yktsubo/libOpenflow v0.1.1/go.mod h1:3tVBpzu6UUtOPf4aa8y9VgQyqThHpNNlVM1dHLlEm84=
 golang.org/x/sys v0.0.0-20190422165155-953cdadca894 h1:Cz4ceDQGXuKRnVBDTS23GTn/pU5OE2C0WrNTOYK1Uuc=
 golang.org/x/sys v0.0.0-20190422165155-953cdadca894/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405 h1:yhCVgyC4o1eVCa2tZl7eS0r+SDo693bJlVdllGtEeKM=
