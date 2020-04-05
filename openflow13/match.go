@@ -400,6 +400,8 @@ func DecodeMatchField(class uint16, field uint8, data []byte) (util.Message, err
 		switch field {
 		case OXM_FIELD_TCP_FLAGS:
 			val = new(TcpFlagsField)
+		case OXM_FIELD_ACTSET_OUTPUT:
+			val = new(ActsetOutputField)
 		}
 		err := val.UnmarshalBinary(data)
 		if err != nil {
